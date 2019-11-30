@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +10,13 @@
 <meta name="format-detection" content="telephone=no, address=no, email=no" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="author" content="liuyahui" />
-<title>liuyahui</title>
-<meta name="description" content="liuyahui website" />
-<meta name="keywords" content="liuyahui,刘亚辉,个人网站" />
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<meta name="author" content="duminghong" />
+<title>1024</title>
+<meta name="description" content="duminghong website" />
+<meta name="keywords" content="duminghong,不二很纯洁,个人网站" />
 <script>
 	var isIE = !!window.ActiveXObject || "ActiveXObject" in window;
 	if(isIE){
@@ -24,12 +26,12 @@
 <style>
 @font-face {
   font-family: 'webfont';
-  src: url('font/webfont.eot');
+  src: url('../font/webfont.eot');
   src:
-    url('font/webfont.eot?#font-spider') format('embedded-opentype'),
-    url('font/webfont.woff') format('woff'),
-    url('font/webfont.ttf') format('truetype'),
-    url('font/webfont.svg') format('svg');
+    url('../font/webfont.eot?#font-spider') format('embedded-opentype'),
+    url('../font/webfont.woff') format('woff'),
+    url('../font/webfont.ttf') format('truetype'),
+    url('../font/webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -42,11 +44,23 @@ html,body{
 	background-color: #e70217;
 }
 .font{
-	height: 11.5vw;
+	/* height: 11.5vw; */
 	font-family: 'webfont';
 	letter-spacing:0;
 	color: #fff;
 	font-size: 14vw;
+    white-space: nowrap;
+    text-align: center;
+}
+.big{
+    font-size: 20vw;
+}
+.small{
+    position: absolute;
+    right: 4vw;
+    bottom: 4vw;
+    text-align: right;
+    font-size: 8vw;
 }
 .box{
 	position: relative;
@@ -57,24 +71,29 @@ html,body{
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -80%);
+	-webkit-transform: translate(-50%, -80%);
 }
-.border{
-	width: 100%;
-	height: 13vw;
-	padding: 0 1vw;
-	border: 0.5vw solid #fff;
+@media (min-width: 900px) {
+    .font{
+        font-size: 8vw;
+    }
+    .big{
+        font-size: 12vw;
+    }
+    .small{
+        font-size: 4vw;
+    }
 }
 </style>
 </head>
 <body>
 <div class="box">
 	<div class="center">
-		<div class="font">LIUYAHUI</div>
-		<div class="center border"></div>
-	</div>
-	
+        <div class="font big">1024</div>
+        <div class="font">Happy holidays</div>
+    </div>
+    <div class="font small">by duminghong</div>
 </div>
 </script>
 </body>
